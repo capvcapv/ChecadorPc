@@ -69,3 +69,12 @@ Aplicación para consultar y visualizar todas las asistencias registradas.
 - **Webcam** conectada y funcional
 
 ### Paquetes NuGet (se instalan automáticamente):
+
+### Estructura de tabla 
+
+CREATE TABLE Capturas (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    NombreEquipo NVARCHAR(255) NOT NULL,
+    FechaHora DATETIME NOT NULL,
+    Foto VARBINARY(MAX) NOT NULL
+);
